@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic .crypto integration</title>
+    </head>
+    <body>
+      <div id="main" style="
+      display: flex;
+      flex-direction: column;
+      height: 100vh;"
+      >
+
+        <input id="input" />
+        <button onclick="resolve()">Resolve</button>
+        <div id="records" style="display: flex; flex-direction: column;">
+  
+        </div>
+      </div>
+
+      <!-- This exposes keccak_256 hash function -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/js-sha3/0.8.0/sha3.min.js"
+        integrity="sha512-PmGDkK2UHGzTUfkFGcJ8YSrD/swUXekcca+1wWlrwALIZho9JX+3ddaaI9wmmf8PmgDIpMtx6TU8YBJAZS0mPQ=="
+        crossorigin="anonymous">
+      </script>
+
+      <!-- This exposes the library as a global variable: ethers -->
+      <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"
+        type="application/javascript"></script>
+
+      <!-- This are our custom files -->
+      <script src="ethers.js"></script>
+      <script src="index.js"></script>
+    </body>
+</html>
