@@ -75,11 +75,6 @@ function isEmpty(msg) {
 
 async function resolve() {
   const userInput = document.getElementById("input").value;
-
-  if (!userInput.endsWith(".crypto")) {
-    displayError('domain is not support', true);
-    return ;
-  }
   const tokenId = namehash(userInput);
   
   const interestedKeys = [

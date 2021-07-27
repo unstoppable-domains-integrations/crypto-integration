@@ -1,4 +1,4 @@
-var address = '0xa6E7cEf2EDDEA66352Fd68E5915b60BDbb7309f5';
+var address = '0x299974AeD8911bcbd2C61262605b89F591a53E83';
 var abi = [
   {
     constant: true,
@@ -37,7 +37,7 @@ var abi = [
     type: 'function',
   }
 ];
-var provider = ethers.providers.getDefaultProvider('mainnet');
+var provider = ethers.providers.getDefaultProvider('rinkeby');
 var contract = new ethers.Contract(address, abi, provider);
 
 async function fetchContractData(keys, tokenId) {
